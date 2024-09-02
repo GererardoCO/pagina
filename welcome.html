@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Estilos básicos para el menú y el encabezado */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header .user-info {
+        margin-right: 20px;
+      }
+      header .user-info p {
+        margin: 0;
+      }
+      .menu {
+        background-color: #f4f4f4;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 1px solid #ddd;
+      }
+      .menu a {
+        color: #333;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      .menu a:hover {
+        background-color: #ddd;
+      }
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
+      .logout-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+      }
+      .logout-btn:hover {
+        background-color: #ff0000;
+      }
+      .language-selector {
+        margin-top: 20px;
+      }
+      .language-selector select {
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="user-info">
+        <p>Welcome, <strong>Username</strong></p>
+      </div>
+      <a href="index.html" class="logout-btn">Logout</a>
+    </header>
+
+    <div class="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Videos</a>
+      <a href="#">Solicitudes</a>
+      <a href="#">Notificaciones</a>
+      <a href="#">Foros</a>
+      <a href="#">Peticiones</a>
+      <a href="#">Noticias</a>
+      <a href="#">Manifestaciones Virtuales</a>
+    </div>
+
+    <div class="content">
+      <h1>Welcome to the Dashboard!</h1>
+      <p>You have successfully logged in.</p>
+
+      <!-- Selector de lengua favorita -->
+      <div class="language-selector">
+        <label for="language">Select your favorite language:</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <!-- Añade más opciones de lenguas aquí -->
+        </select>
+      </div>
+    </div>
+  </body>
+</html>
